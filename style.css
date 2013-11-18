@@ -1,0 +1,14 @@
+.sfdvHighlight { background-color: rgba(255, 204, 204, 0.7); outline: 1px solid #ff7b7b; }
+.placeholderMeta {	background-color: rgb(83, 83, 83); border-radius: 0px 0px 5px 5px; color: #ffffff; float: left; font: bold 11px/23px arial; overflow: hidden; padding-right: 8px; position: absolute; text-align: left; z-index: 10002; }
+.placeholderMeta.sfdvCol {	background-color: rgb(104, 155, 48); }
+.sfdvOverlay { background-color: rgba(204, 17, 102, 0.25); background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); border-radius: 0px 0px 5px 5px; border-top: 3px solid rgb(83, 83, 83); height: 90%; position: absolute; width: 100%; z-index: 10001; }
+.placeholderMeta .sfdvTitle { float: left; }
+.placeholderMeta .sfdvToggle { float: left; height: 16px; margin-left: 3px; width: 16px; }
+.placeholderMeta .sfdvToggle.collapse { background: url('chrome-extension://__MSG_@@extension_id__/collapse_icon.png') no-repeat 0 4px; }
+.placeholderMeta .sfdvToggle.collapsed { background: url('chrome-extension://__MSG_@@extension_id__/expand_icon.png') no-repeat 0 4px; }
+.sfdvCollapsed { overflow: hidden; }
+#sfdvThumb { position: absolute; border: #e4e4e4 solid 2px; padding: 20px 0 5px; background: #f8f8f8 url('chrome-extension://__MSG_@@extension_id__/ajax-loader.gif') no-repeat 135px 80px; height: 0; width: 0; overflow: hidden; }
+#sfdvThumb:before { content:' '; height: 0; position: absolute; width: 0; border: 10px solid transparent; border-right-color: #e4e4e4; left: -20px; top: 0; }
+#sfdvThumb p { font: bold 11px/20px Arial,Helvetica,sans-serif; position: absolute; top: 0; margin: 0; padding-left: 5px; }
+#sfdvThumb iframe { overflow: hidden; width: 960px; height: 480px; -webkit-transform-origin: 0 0; -webkit-transform: scale(.3); border: 0; border-bottom: 3px solid #e4e4e4; border-top: 3px solid #e4e4e4; position: relative; z-index: 1; }
+#sfdvThumb .sfdvThumbOverlay { position: absolute; height: 149px; width: 100%; z-index:2; }

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sitefinity CMS Detail Viewer</title>
+		<link rel="stylesheet" type="text/css" href="jquery.minicolors.css" />
+		<style>
+			body { font: 84% Arial, sans-serif; margin: 10px;	}
+			h1 { font-size: 156% }
+			h1 img { margin: 1px 5px 0 1px; vertical-align: middle; }
+			h2 { border-top: 1px solid #9cc2ef;	background-color: #ebeff9; padding: 3px 5px; font-size: 100%; }
+			.instructions { color: #333; font-size: 11px; }
+			.ftext { font-size: 11px; color: #333; }
+			#labeloptions { padding-left: 40px; margin-bottom: 10px; }
+		</style>
+	</head>
+	<body>
+		<h1>
+			<img src="sf-64.png" alt="Sitefinity">
+			<span>Sitefinity CMS Detail Viewer</span>
+		</h1>
+		<h2>Options</h2>
+		<span>Highlight Content Blocks on Front-End:</span>
+		<select id="contentblocks">
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</select>
+		<p class="instructions">Enabling this feature will highlight content areas on the front-end of the website. Useful for diagnosing instances where the content inside a content block is bigger than the allowed size.</p>
+		<br>
+		<span>Label Content Placeholders:</span>
+		<select id="placeholders">
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</select>
+		<p class="instructions">Enabling this feature will turn on content placeholder labels in the admin area of the site. There's a button, to the left of the label text, that allows you to collapse/expand a container to access the area behind it.</p>
+		<br>
+		<div id="labeloptions" style="display: none;">
+			<p><strong>Placeholder Options</strong></p>
+			<span>Initial Visibility:</span> <input type="radio" id="show" name="initialvisibility" value="1" checked /> <label for="show">Shown</label> <input type="radio" id="hide" name="initialvisibility" value="0" /> <label for="hide">Hidden</label>
+			<p class="instructions">Regardless of this setting, pressing "z" will hide/show the labels</p>
+			<br>
+			<span>Overlay Color:</span> <input name="overlaycolor" class="minicolors" type="text">
+			<p class="instructions">Set a custom color for the collapse animation and collapsed state</p>
+			<br>
+		</div>
+		<span>Preview Pages:</span>
+		<select id="pagepreviews">
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</select>
+		<p class="instructions">Enabling this feature will turn on page previews in the admin area of the site. Hover over the title of published pages to view.</p>
+		<br>
+		<button id="save">Save</button>
+		<br>
+		<p class="ftext">Follow me on Twitter: <a href="http://twitter.com/timw255">@timw255</a></p>
+		<p class="ftext">Check out my site for more free Sitefinity goodies! <a href="http://www.codemoar.com/">codeMOAR.com</a></p>
+		<p id="status"></p>
+		<script src="jquery-1.9.1.min.js"></script>
+		<script src="jquery.minicolors.js"></script>
+		<script src="options.js"></script>
+	</body>
+</html>
